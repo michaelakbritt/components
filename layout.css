@@ -76,10 +76,18 @@ body {
     flex-shrink: 0; /* Prevent shrinking on smaller screens */
 }
 
+/* Hover effect for the feature item image */
 .feature-item img {
     width: 80px;
-    height: 80px; /* Slightly larger icons */
+    height: 80px;
     margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Smooth transition for scaling effect */
+}
+
+/* Hover effect for scaling the image */
+.feature-item img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
 
 .feature-item h3 {
